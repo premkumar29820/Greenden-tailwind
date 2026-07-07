@@ -14,8 +14,8 @@
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <h1 class=" font-bold text-2xl">Greenden</h1>
 
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-            class="w-6 h-6 md:hidden">
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
 
@@ -32,6 +32,27 @@
             </li>
         </ul>
     </nav>
+    <!--side Nav-->
+
+    <section id="sidenav" class="bg-green-100 fixed z-20 top-0 transition-all duration-700"
+        style="width: 50%;height: 50vh;right: -50%;">
+
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer">x</p>
+        </div>
+        <ul class="flex flex-col gap-10 items-center text-gray-600">
+            <li>
+                <a class="hover:underline hover: text-black" href="./index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover: text-black" href="./product.html">Products</a>
+            </li>
+            <li>
+                <a class="hover:underline hover: text-black" href="./contact.html">Contact</a>
+            </li>
+        </ul>
+    </section>
+
 
     <!--Header Section-->
     <selection class="bg-green-100 p-4 md:p-10 flex justify-center">
@@ -131,9 +152,9 @@
     <section>
         <h1 class="font-bold mt-5 text-3xl text-center">Customer Reviews</h1>
 
- 
+
         <div class="flex flex-col gap-5 justify-center text-white m-5">
-             <div class="bg-green-900 p-5 ">
+            <div class="bg-green-900 p-5 ">
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi amet facere quo earum adipisci, ea
                     nobis illum. Architecto nostrum optio modi reprehenderit dolorum, minus officiis officia eos
                     incidunt quam. Rerum?</p>
@@ -153,24 +174,24 @@
                     incidunt quam. Rerum?</p>
                 <p class="font-bold text-yellow-300">Amir</p>
             </div>
-        </div>   
+        </div>
     </section>
     <!--News Letter-->
     <section class="text-center">
         <h1 class="text-3xl font-bold mt-5 text-center"> Join Our News Letter</h1>
         <p>Signup for our email newspaper to get exclusive discounts, updates, and more</p>
-        <input type="text" placeholder="Enter your Email..." class="border border-black p-2 m-3"style="width: 80%;">
+        <input type="text" placeholder="Enter your Email..." class="border border-black p-2 m-3" style="width: 80%;" required>
         <br>
         <button class="bg-black text-white p-2 m-1 underline">Subscribe</button>
     </section>
     <!--Footer-->
     <section class="bg-green-100 p-10 flex flex-col gap-5">
         <h1 class="text-4xl font-bold">Greenden</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ab quod ea doloribus molestias voluptatem. Sint nam et assumenda quo!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque ab quod ea doloribus molestias voluptatem.
+            Sint nam et assumenda quo!</p>
         <p>@ 2026 Greenden.com</p>
     </section>
-
-
+    <script src="index.js"> </script>
 </body>
 
 </html>
